@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFE.UFEedClient", "UFE.UFEedClient\UFE.UFEedClient.netcore.csproj", "{D91EC1CF-9115-4821-8F8A-D6425F2575DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFE.UFEedClient.Test", "UFE.UFEedClient.Test\UFE.UFEedClient.Test.netcore.csproj", "{46DE61DF-CC52-4931-A512-6FE4735D379A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroMQ.netcore", "..\3rdparty\clrzmq4\ZeroMQ.netcore.csproj", "{53119877-9810-47CE-B47F-BCD40903B2EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFE.UFEedClient.GenConsts", "UFE.UFEedClient.GenConsts\UFE.UFEedClient.GenConsts.netcore.csproj", "{247D1879-ADDE-4521-B012-B5D02FE15081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFE.UFEedClient.Sample.netcore", "UFE.UFEedClient.Sample.netcore\UFE.UFEedClient.Sample.netcore.csproj", "{4D2F52A6-2885-4380-8738-3E3B1D05448D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D91EC1CF-9115-4821-8F8A-D6425F2575DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91EC1CF-9115-4821-8F8A-D6425F2575DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91EC1CF-9115-4821-8F8A-D6425F2575DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91EC1CF-9115-4821-8F8A-D6425F2575DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46DE61DF-CC52-4931-A512-6FE4735D379A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46DE61DF-CC52-4931-A512-6FE4735D379A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46DE61DF-CC52-4931-A512-6FE4735D379A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46DE61DF-CC52-4931-A512-6FE4735D379A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53119877-9810-47CE-B47F-BCD40903B2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53119877-9810-47CE-B47F-BCD40903B2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53119877-9810-47CE-B47F-BCD40903B2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53119877-9810-47CE-B47F-BCD40903B2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247D1879-ADDE-4521-B012-B5D02FE15081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247D1879-ADDE-4521-B012-B5D02FE15081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247D1879-ADDE-4521-B012-B5D02FE15081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247D1879-ADDE-4521-B012-B5D02FE15081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2F52A6-2885-4380-8738-3E3B1D05448D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2F52A6-2885-4380-8738-3E3B1D05448D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D2F52A6-2885-4380-8738-3E3B1D05448D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2F52A6-2885-4380-8738-3E3B1D05448D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PackageVersion>21.6.0</PackageVersion>
+        <AssemblyName>UFE.UFEedClient.GenConsts</AssemblyName>
+        <RootNamespace>UFE.UFEedClient.GenConsts</RootNamespace>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CommandLineParser" Version="2.7.82" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Properties\AssemblyInfo.cs" />
+      <None Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+
+</Project>

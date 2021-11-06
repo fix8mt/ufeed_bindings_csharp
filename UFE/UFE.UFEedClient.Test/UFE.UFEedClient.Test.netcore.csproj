@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+
+        <Configurations>Debug;Release</Configurations>
+
+        <Platforms>AnyCPU</Platforms>
+
+        <AssemblyName>UFE.UFEedClient.Test</AssemblyName>
+
+        <RootNamespace>UFE.UFEedClient.Test</RootNamespace>
+
+        <PackageVersion>21.6.0</PackageVersion>
+
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="nunit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\UFE.UFEedClient\UFE.UFEedClient.netcore.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Properties\AssemblyInfo.cs" />
+      <None Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+
+</Project>

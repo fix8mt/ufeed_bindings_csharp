@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AssemblyName>UFE.UFEedClient.Sample</AssemblyName>
+        <RootNamespace>UFE.UFEedClient.Sample</RootNamespace>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\UFE.UFEedClient\UFE.UFEedClient.netcore.csproj" />
+    </ItemGroup>
+
+</Project>

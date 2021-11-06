@@ -1,0 +1,6 @@
+bin
+obj
+.idea
+UFE/packages
+.vs
+*.user
