@@ -6,7 +6,7 @@
         <Platforms>AnyCPU</Platforms>
         <AssemblyName>UFE.UFEedClient</AssemblyName>
         <RootNamespace>UFE.UFEedClient</RootNamespace>
-        <PackageVersion>21.6.0</PackageVersion>
+        <PackageVersion>21.9.0</PackageVersion>
         <LangVersion>8</LangVersion>
     </PropertyGroup>
 

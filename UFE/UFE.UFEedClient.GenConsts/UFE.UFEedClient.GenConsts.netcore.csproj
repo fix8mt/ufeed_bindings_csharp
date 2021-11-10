@@ -3,7 +3,7 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
-        <PackageVersion>21.6.0</PackageVersion>
+        <PackageVersion>21.9.0</PackageVersion>
         <AssemblyName>UFE.UFEedClient.GenConsts</AssemblyName>
         <RootNamespace>UFE.UFEedClient.GenConsts</RootNamespace>
         <LangVersion>8</LangVersion>

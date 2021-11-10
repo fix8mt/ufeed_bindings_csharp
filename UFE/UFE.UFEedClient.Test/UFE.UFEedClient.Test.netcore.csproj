@@ -13,7 +13,7 @@
 
         <RootNamespace>UFE.UFEedClient.Test</RootNamespace>
 
-        <PackageVersion>21.6.0</PackageVersion>
+        <PackageVersion>21.9.0</PackageVersion>
 
         <LangVersion>8</LangVersion>
     </PropertyGroup>
