@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://www.fix8mt.com"><img src="fix8mt_Master_Logo_Green_Trans.png" width="200"></a>
+</p>
+
 # UFEed C# Binding
 
 -   [Introduction](#introduction)
@@ -145,9 +149,9 @@ public class Builder
     public Builder AddFields(IEnumerable<UFEField> fields);
     public Builder AddGroup(uint tag, out UFEField group, Action<Builder, UFEField> tr, UFEFieldLocation loc = UFEFieldLocation.FlBody)
     public Builder AddGroupItem(UFEField group);
-    
+
     /// <summary>
-    /// Creates UFEMessage from builder 
+    /// Creates UFEMessage from builder
     /// </summary>
     /// <returns>built UFEMessage</returns>
     public UFEMessage Build();
@@ -275,7 +279,7 @@ var nos = _uc.CreateMessage()
 
 ## UFEedClient
 
-The `UFEedClient` class is used as the interface to make both System and 
+The `UFEedClient` class is used as the interface to make both System and
 Business API calls to the UFEGW. Sessions between `UFEedClient` and the
 UFEGW are made up of ZeroMQ PUB/SUB and REQ/REP sockets. The network
 addresses and message topics inherent to these sockets are configurable
@@ -307,20 +311,20 @@ class UFEedClient
 
     /// <summary>
     /// Event for authentication request. Will be called in a different thread in most cases.
-    /// Consumer must set UFEAuthEventArgs.Accept to false in case of wrong login/password. 
+    /// Consumer must set UFEAuthEventArgs.Accept to false in case of wrong login/password.
     /// </summary>
-    public event EventHandler<UFEAuthEventArgs> AuthenticateRequested; 
+    public event EventHandler<UFEAuthEventArgs> AuthenticateRequested;
 
     /// <summary>
     /// Event for ZeroMQ errors.
-    /// Consumer must set UFEZeroMQErrorEventArgs.Continue to false in case of unrecoverable errors 
+    /// Consumer must set UFEZeroMQErrorEventArgs.Continue to false in case of unrecoverable errors
     /// </summary>
     // ReSharper disable once InconsistentNaming
     public event EventHandler<UFEZeroMQErrorEventArgs> ZeroMQErrorHappened;
 
     /// <summary>
     /// Event for UFEedClintErrors
-    /// Consumer must set UFEErrorEventArgs.Continue to false in case of unrecoverable errors 
+    /// Consumer must set UFEErrorEventArgs.Continue to false in case of unrecoverable errors
     /// </summary>
     public event EventHandler<UFEErrorEventArgs> ErrorHappened;
 }
@@ -437,14 +441,14 @@ public class UFEedClient : IDisposable
     /// </summary>
     /// <param name="msg">Message to send</param>
     public void Respond(UFEMessage.Builder msg);
-    
+
     /// <summary>
     /// Events
     /// </summary>
     public event EventHandler<UFEMessageEventArgs> SubscriptionMessageReceived;
     public event EventHandler<UFEMessageEventArgs> ResponderMessageReceived;
     public event EventHandler<UFEMessageEventArgs> ResponseMessageReceived;
-    public event EventHandler<UFEAuthEventArgs> AuthenticateRequested; 
+    public event EventHandler<UFEAuthEventArgs> AuthenticateRequested;
     public event EventHandler<UFEZeroMQErrorEventArgs> ZeroMQErrorHappened;
     public event EventHandler<UFEErrorEventArgs> ErrorHappened;
 }
@@ -477,7 +481,7 @@ using (var uc = new UFEedClient(new UFEedConfiguration{Subscriber = SUBSCRIBER_D
 The `UFEed_C#` maintains a list of constant values that translate to integer
 codes in the UFEGW. These integer codes are used to identify System API
 services as well as general FIX functionality. A full list of these
-constants is available at `UFE/UFE.UFEedClient/UFEConsts.cs` file. 
+constants is available at `UFE/UFE.UFEedClient/UFEConsts.cs` file.
 Constants could be regenerated using `UFE.UFEedClient.GenConsts` project.
 
 ## FIX variants constants
